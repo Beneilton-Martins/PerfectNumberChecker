@@ -171,19 +171,19 @@ int main(int argc, char **argv){
 
 /* 
 	 ________________________________________________________________________________________
-   |* Bugs																																								|	
-	 |* O Número 6 não é considerado perfeito (tratado)																			|	
-	 |* Tratamento feito para o número 1 e 0, porém a forma não me parece a mais adequada		|	
-	 |* Número 1 é considerado perfeito (matematicamente falando isso é um erro)						|	
+    	 |* Bugs										|	
+	 |* O Número 6 não é considerado perfeito (tratado)					|
+	 |* Tratamento feito para o número 1 e 0, porém a forma não me parece a mais adequada	|	
+	 |* Número 1 é considerado perfeito (matematicamente falando isso é um erro)		|	
 	 |* Número 1 só é divisivel por si, e os numeros perfeitos não incluem a si na contagem	|	
 	 |______________________________________________________________________________________|
 
 */									
 
 /* 
-		* Checagem manual do bug do numero 6
-		* thread[0] current_num = 2, aux = 3, factor_auxvira novo lowest_factor, salva 2 e 3 no array encerra a thread[0]
- 		* thread[1] current_num = 1, salva o 1 (caso fixo) não salva 6, current_num = 3
-		* current_num = 3 é igual o limite de treads então o teste dos valores 2 e 3 acontece novamente
-		* Bug corrigido, problema... não sei se isso causara novos bugs, mas por enquanto não houve
+	* Checagem manual do bug do numero 6
+	* thread[0] current_num = 2, aux = 3, factor_auxvira novo lowest_factor, salva 2 e 3 no array encerra a thread[0]
+ 	* thread[1] current_num = 1, salva o 1 (caso fixo) não salva 6, current_num = 3
+	* current_num = 3 é igual o limite de treads então o teste dos valores 2 e 3 acontece novamente
+	* Bug corrigido, problema... não sei se isso causara novos bugs, mas por enquanto não houve
 */
